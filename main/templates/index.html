@@ -86,62 +86,15 @@
             <br>
             <center><h2>Skills</h2></center>
             <div class="skills">
-                <div class="skill-card" data-level="90">
-                    <i class="fas fa-network-wired"></i>
-                    <h4>Network Config & Sec</h4>
+                {% for skill in skills %}
+                <div class="skill-card" data-level="{{ skill.proficiency }}">
+                    <i class="{{ skill.icon_class }}"></i>
+                    <h4>{{ skill.name }}</h4>
                     <div class="skill-level">
-                        <div class="skill-progress"></div>
+                        <div class="skill-progress" style="width: {{ skill.proficiency }}%;"></div>
                     </div>
                 </div>
-                <div class="skill-card" data-level="85">
-                    <i class="fas fa-bug"></i>
-                    <h4>Penetration Testing</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-level="88">
-                    <i class="fas fa-shield-alt"></i>
-                    <h4>Security Framework</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-level="82">
-                    <i class="fas fa-laptop"></i>
-                    <h4>Operating Systems</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-level="85">
-                    <i class="fas fa-tools"></i>
-                    <h4>Troubleshoot</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-level="80">
-                    <i class="fas fa-fingerprint"></i>
-                    <h4>Forensics</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-level="80">
-                    <i class="fas fa-code"></i>
-                    <h4>Coding</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
-                <div class="skill-card" data-level="80">
-                    <i class="fas fa-file-code"></i>
-                    <h4>Scripting</h4>
-                    <div class="skill-level">
-                        <div class="skill-progress"></div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
