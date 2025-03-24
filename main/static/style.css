@@ -57,11 +57,10 @@ nav {
 }
 
 section {
-    padding: 0rem 1rem;
+    margin: 0ox 0;  
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -229,6 +228,12 @@ section {
     transition: width 1s ease-in-out;
 }
 
+.projects {
+    height: max-content;
+    padding: 10rem;
+}
+
+
 .project-grid {
     width: 100%;
     max-width: 1200px;
@@ -239,8 +244,10 @@ section {
 }
 
 .project {
+    height: 200px;
+    margin: 10px;
     background: white;
-    padding: 1.5rem;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: var(--shadow);
     transition: transform 0.3s;
@@ -494,7 +501,8 @@ footer {
     cursor: pointer;
 }
 
-#res {
+.res {
+    width: 100px;
     display: block;
     justify-content: center;
 }
