@@ -58,7 +58,7 @@ nav {
 
 section {
     margin: 0ox 0;  
-    min-height: 100vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,7 @@ section {
 
 .hero-content {
     max-width: 1200px;
+    height: 90vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -179,10 +180,11 @@ section {
 }
 
 .skills {
-    display: inline-grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 5.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
     justify-content: space-around;
 }
@@ -231,7 +233,7 @@ section {
 
 .projects {
     height: max-content;
-    padding: 10rem;
+    padding: 7rem;
 }
 
 
@@ -503,8 +505,9 @@ footer {
 }
 
 .res {
-    width: 100px;
-    display: block;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
     justify-content: center;
 }
 
@@ -571,6 +574,10 @@ footer {
         gap: 1rem;
     }
 
+    .projects{
+        width: 100%;
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
     }
@@ -579,6 +586,13 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
     .hero h1 {
@@ -596,7 +610,7 @@ footer {
     }
 
     .social-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
     }
 }
