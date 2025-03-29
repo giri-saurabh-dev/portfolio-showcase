@@ -52,13 +52,13 @@
     </section>
 
     <div id="skillModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h3 id="modalTitle"></h3>
-        <p id="modalDescription"></p>
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
     </div>
-</div>
-<section id="background" class="background">
+    <section id="background" class="background">
         <div class="background-content">
             <center><h2>Background</h2></center>
             <div class="experience">
@@ -78,8 +78,7 @@
                     <p>OS Installation and Troubleshoot, Remote Support</p>
                 </div>
             </div>
-            <br>
-            <br>
+
             <center><h2>Skills</h2></center>
             <div class="skills">
                 {% for skill in skills %}
@@ -94,10 +93,12 @@
             </div>
         </div>
     </section>
+
     <div class="res">
         <a href="/SaurabhGiri-CV.pdf" class="cta-button">Download Resume</a></i>
     </div>
-    <section class="projects">
+    
+    <div id="projects">
         <h2>Projects</h2>
         <div class="project-grid">
             {% for project in projects %}
@@ -116,7 +117,7 @@
                 </div>
             {% endfor %}
         </div>
-    </section>
+    </div>
 
     <section id="contact">
         <h2>Contact Me</h2>

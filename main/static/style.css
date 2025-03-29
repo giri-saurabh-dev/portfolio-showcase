@@ -58,7 +58,7 @@ nav {
 
 section {
     margin: 0ox 0;  
-    min-height: 65vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@ section {
 
 .hero-content {
     max-width: 1200px;
-    height: 90vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -180,13 +180,13 @@ section {
 }
 
 .skills {
-    display: flex;
+    display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 5.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
-    justify-content: space-around;
+    align-items: center;
 }
 
 .skill-card {
@@ -231,9 +231,11 @@ section {
     transition: width 1s ease-in-out;
 }
 
-.projects {
-    height: max-content;
-    padding: 7rem;
+#projects {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -574,8 +576,17 @@ footer {
         gap: 1rem;
     }
 
+    .skill-card {
+        width: 170px;
+    }
+
     .projects{
-        width: 100%;
+        min-height: 70vh;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-grid {
@@ -586,12 +597,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
-
 
 
 @media (max-width: 480px) {
